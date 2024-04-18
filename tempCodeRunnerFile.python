@@ -1,0 +1,20 @@
+import sys
+import smtplib
+
+from_addr = 'info@algodream.in'
+to_addrs = ['techahideas@gmail.com']
+msg = """From: Sender
+To: Recipient
+Subject: Okazii
+
+The message here. my name is Askery
+"""
+
+try:
+    s = smtplib.SMTP_SSL('smtp.hostinger.com', 465)  # Use SMTP_SSL for SSL connection
+    s.login('info@algodream.in', 'Askery786.@')
+    s.sendmail(from_addr, to_addrs, msg)
+    s.quit()
+    print("Email sent successfully!")
+except smtplib.SMTPException as e:
+    print("Error: ", e)
