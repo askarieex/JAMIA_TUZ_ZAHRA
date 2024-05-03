@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Madrasa Jamia-Al-Zahra || Home </title>
+    <title>Jamia-Al-Zahra || Home </title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
@@ -15,8 +15,6 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-
-
     <!-- ========================= CSS here ========================= -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/LineIcons.2.0.css" />
@@ -103,43 +101,56 @@
       }
       .notice-container{
         display: flex;
-        padding: 0 35px;
+        /* padding: 0 35px; */
         align-items: center;
         justify-content: center;
-        min-height: 80vh;
+        min-height: 95vh;
         background: #ffffff;
+        width: 100vw;
+        overflow: hidden;
+        /* border: 2px solid red; */
       }
-      
+      .dark-layer{
+        display: flex;
+        justify-content: center;
+
+      }
+      .wrapper{
+        /* border: 2px solid black; */
+        width: 90%;
+      }
       .wrapper i:first-child {
           z-index: 9;
       }
       .carousel .card {
-       height: 60vh;
+       height: 95vh;
        background:#f1f1f1;
+       /* padding: 10px 20px; */
+       /* border: 2px solid red; */
+       overflow: auto;
+ 
       }
       .card p{
         padding:12px;
         font-size:13px;
         font-style:italic;
+        
       }
       .card h2{
         font-size:18px;
         font-style:italic;
+      }
+
+      @media (max-width:450px){
+        .notice-container h2.wow{
+           font-size: 22px !important;
+        }
       }
     </style>
     
   </head>
 
   <body>
-    <!--[if lte IE 9]>
-      <p class="browserupgrade">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
-        your experience and security.
-      </p>
-    <![endif]-->
-
-    <!-- Preloader -->
     <div class="preloader">
       <div class="preloader-inner">
         <div class="preloader-icon">
@@ -210,19 +221,15 @@ include './components/header.php';
                   Welcome to our campus
                 </h2>
                 <p class="wow fadeInUp" data-wow-delay=".6s">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, do
-                  eius mod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad min im veniam, quis nostrud exercitati ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  The construction of a righteous and healthy society has long been the desire of prophets and messengers (peace be upon them), and the construction of such a society is only possible when the women of society are educated. This is because children, nurtured in their embrace, can influence the environment through their character and actions. Recognizing this need, the eminent scholar and educator, Hajj Maulana Syed Haider Mehdi Zaidi (may his soul rest in peace), laid the foundation of a great religious institution to educate women and acquaint them with moral values and religious principles. He did so with the noble efforts of his esteemed life partner, Fazila Tam Seyyidah Rabbab Zaidi. This endeavor was realized on 20 Jamadi al-Thani 1415 AH, corresponding to November 24, 1994. Today, Al-Zahra Comprehensive Institute, as it is known, is renowned, and girls educated and nurtured in Islamic teachings are fulfilling the great duty of societal reform in various cities of India.
                 </p>
                 <p class="qote wow fadeInUp" data-wow-delay=".8s">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, do
-                  eius mod tempor incididunt ut labore et dolore magna aliqua.
+                    May the Almighty grant continuous progress to this institution day by day.
                 </p>
                 <div class="button wow fadeInUp" data-wow-delay="1s">
-                  <a href="about-us.html" class="btn">Read More</a>
+                  <a href="organization.php" class="btn">Read More</a>
                   <a
-                    href="https://www.youtube.com/watch?v=r44RKWyfcFw&fbclid=IwAR21beSJORalzmzokxDRcGfkZA1AtRTE__l5N4r09HcGS5Y6vOluyouM9EM"
+                    href="https://www.youtube.com/watch?v=c2Fl2NB-WVM"
                     class="glightbox video btn"
                   >
                     Play Video<i class="lni lni-play"></i
@@ -337,8 +344,9 @@ include './components/header.php';
 
 <br><br><br>
     <h2 class="wow fadeInUp" data-wow-delay=".4s" style="text-align: center;">
-                  Welcome to our campus
+      Announcements & Updates
     </h2>
+    <br><br>
 <div class="notice-container">
 <div class="dark-layer"> 
     <div class="wrapper">
@@ -385,74 +393,7 @@ include './components/header.php';
 
 
 
-    <!-- Start Newsletter Area -->
-    <section class="newsletter-area section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 offset-lg-3 col-md-12 col-12">
-            <div class="newsletter-title">
-              <span>Sign Up for</span>
-              <h2>The Newsletter</h2>
-              <p>
-                Subscribe to us to always stay in touch with us and get the
-                latest news<br />
-                about our company and all of our activities!
-              </p>
-            </div>
-            <!-- Start Newsletter Form -->
-            <div class="subscribe-text wow fadeInUp" data-wow-delay=".2s">
-              <form
-                action="mail/mail.php"
-                method="get"
-                target="_blank"
-                class="newsletter-inner"
-              >
-                <input
-                  name="EMAIL"
-                  placeholder="Your email address"
-                  class="common-input"
-                  onfocus="this.placeholder = ''"
-                  onblur="this.placeholder = 'Your email address'"
-                  required=""
-                  type="email"
-                />
-                <div class="button">
-                  <button class="btn">Subscribe Now!</button>
-                </div>
-              </form>
-              <ul class="newsletter-social">
-                <li>
-                  <a href="javascript:void(0)"
-                    ><i class="lni lni-facebook-original"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)"
-                    ><i class="lni lni-twitter-original"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)"
-                    ><i class="lni lni-instagram"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)"
-                    ><i class="lni lni-linkedin-original"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)"
-                    ><i class="lni lni-google"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-            <!-- End Newsletter Form -->
-          </div>
-        </div>
-      </div>
-    </section>
+   
 
 
     <!-- /End Newsletter Area -->
